@@ -1,0 +1,18 @@
+:root {
+  --mainPink: #ff66b3;
+  --mainGreen: #44bba4;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--mainPink);
+}
+
+h1 {
+  color: var(--mainGreen);
+}
+
+#btn {
+  align-items: center;
+  text-align: center;
+}
