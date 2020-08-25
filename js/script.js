@@ -1,9 +1,24 @@
-const colors = ["#4D9DE0", "#E15554", "#E1BC29", "#3BB273", "#7768AE"];
+const colorBtn = document.querySelector(".colorBtn");
+const bodyBcg = document.querySelector("body");
 
-const btn = document.getElementById("btn");
+const colors = [
+  "#03071e",
+  "#370617",
+  "#6a040f",
+  "#9d0208",
+  "#d00000",
+  "#dc2f02",
+  "#e85d04",
+  "#f48c06",
+  "#faa307",
+  "#ffba08",
+];
 
-btn.addEventListener("click", () => {
+// function Change Color
+function changeColor() {
   let random = Math.floor(Math.random() * colors.length);
-  const body = document.body;
-  body.style.backgroundColor = colors[random];
-});
+  bodyBcg.style.backgroundColor = colors[random];
+}
+
+// Event Listener
+colorBtn.addEventListener("click", changeColor);
